@@ -54,9 +54,7 @@ nav ul {
 nav a {
   color: #ffffff;
 }
-/* Contrast #222222 on #fffaf3 = 15.3:1 */
-/* Contrast #ffffff on #8c1010 = 9.6:1 */
-/* Contrast #8c1010 on #fffaf3 = 9.2:1 */
+
 a {
   color: #8c1010;
 }
@@ -79,7 +77,10 @@ main {
 section {
   margin-bottom: 40px;
 }
-
+/* Contrast #222222 on #fffaf3 = 15.3:1 */
+/* Contrast #ffffff on #8c1010 = 9.6:1 */
+/* Contrast #8c1010 on #fffaf3 = 9.2:1 */
+/* (footer links, hover states) gav andra kontrastvärden, vissa bättre andra mindre bra */
 article {
   background-color: #ffffff;
   border: 1px solid #e3d5c3;
@@ -117,4 +118,13 @@ footer a {
 
 address {
   font-style: normal;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid #1a73e8;
+  outline-offset: 2px;
 }
