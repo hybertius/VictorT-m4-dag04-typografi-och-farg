@@ -91,6 +91,7 @@ section {
 /* Contrast #ffffff on #8c1010 = 9.6:1 */
 /* Contrast #8c1010 on #fffaf3 = 9.2:1 */
 /* (footer links, hover states) gav andra kontrastvärden, vissa bättre andra mindre bra */
+
 article {
   background-color: #ffffff;
   border: 1px solid #e3d5c3;
@@ -137,4 +138,24 @@ select:focus-visible,
 textarea:focus-visible {
   outline: 3px solid #1a73e8;
   outline-offset: 2px;
+}
+
+label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.falt {
+  margin-bottom: 16px;
+}
+
+input,
+select,
+textarea {
+  width: 100%;
+  max-width: 40rem;
+  padding: 8px;
+  border: 2px solid #8a7a6a;
+  font: inherit;
 }
