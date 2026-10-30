@@ -22,10 +22,12 @@ h2,
 h3 {
   font-family: Georgia, serif;
   line-height: 1.2;
+  color: #3b2418;
 }
 
 h1 {
   font-size: 1.75rem;
+  color: #ffffff;
 }
 
 h2 {
@@ -61,18 +63,22 @@ nav ul {
   padding: 0;
 }
 
-nav a {
-  color: #ffffff;
-}
-
 a {
   color: #8c1010;
 }
 
-a:hover {
+main a:hover {
   color: #5e0a0a;
 }
 
+nav a {
+  color: #ffffff;
+}
+
+nav a:hover,
+footer a:hover {
+  color: #ffffff;
+}
 .pris {
   color: #8c1010;
   font-weight: 700;
@@ -90,8 +96,9 @@ section {
 
 /* Contrast #222222 on #fffaf3 = 15.3:1 */
 /* Contrast #ffffff on #8c1010 = 9.6:1 */
-/* Contrast #8c1010 on #fffaf3 = 9.2:1 */
-/* (footer links, hover states) gav andra kontrastvärden, vissa bra andra mindre bra cardemom*/
+/* Contrast #8c1010 on #fffaf3 = 9.2:1 /*
+/* #FFFFFF on #5b3a29 contrast: 10:1 Header​‌ /*
+/* #3B2418 on #F3E3CF Contrast: 11.5:1 Hero Heading */
 
 article {
   background-color: #ffffff;
@@ -116,6 +123,11 @@ article img,
   border: 0;
   border-radius: 6px;
   text-decoration: none;
+}
+
+.knapp:hover {
+  background-color: #6f0c0c;
+  color: #ffffff;
 }
 
 footer {
